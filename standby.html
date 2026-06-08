@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Standby — Awaiting Others</title>
+<style>
+  :root { --bg:#0f1115; --panel:#171a21; --card:#1e222b; --ink:#e6e9ef; --muted:#8a93a6; --line:#2a2f3a; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  header { display:flex; align-items:baseline; justify-content:space-between;
+    padding:18px 24px; border-bottom:1px solid var(--line); }
+  header h1 { font-size:20px; margin:0; letter-spacing:.3px; }
+  header h1 .gr { color:#2dd4bf; }
+  header .updated { color:var(--muted); font-size:13px; }
+  .grid { display:grid; grid-template-columns:1.6fr 1fr 1fr; gap:14px; padding:18px 24px; }
+  @media (max-width:900px) { .grid { grid-template-columns:1fr; } }
+  .col { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:12px; }
+  .col h2 { font-size:13px; text-transform:uppercase; letter-spacing:.6px; color:var(--muted);
+    margin:4px 4px 12px; display:flex; align-items:center; justify-content:space-between; }
+  .col h2 .count { background:var(--card); color:var(--ink); border-radius:20px; padding:1px 9px; font-size:12px; }
+  .cards { display:flex; flex-direction:column; gap:8px; }
+  .card { background:var(--card); border-left:4px solid #2dd4bf; border-radius:8px; padding:9px 11px; }
+  .cardtop { display:flex; align-items:center; gap:8px; }
+  .who { font-size:13px; font-weight:700; color:#7fe0d2; }
+  .item { margin:4px 0 3px; font-size:14px; }
+  .cardmeta { color:var(--muted); font-size:12px; }
+  .flag { margin-left:auto; font-size:10px; text-transform:uppercase; letter-spacing:.5px;
+    padding:1px 6px; border-radius:4px; font-weight:700; }
+  .flag.soon { background:#172554; color:#93c5fd; }
+  .flag.late { background:#3f1d1d; color:#fca5a5; }
+  .empty { color:var(--muted); font-size:13px; padding:6px 4px; font-style:italic; }
+  footer { color:var(--muted); font-size:12px; padding:6px 24px 22px; }
+</style></head>
+<body>
+<header>
+  <h1>The <span class="gr">Standby</span> · Awaiting Others</h1>
+  <div class="updated">Updated Sunday, June 7 · 9:45 PM ET</div>
+</header>
+<div class="grid">
+<section class="col col-people"><h2>Awaiting from Others<span class="count">18</span></h2><div class="cards"><div class="card"><div class="cardtop"><span class="who">Board</span></div><div class="item">Responses to the COLA email</div><div class="cardmeta">waiting 368d · Board Meetings</div></div>
+<div class="card"><div class="cardtop"><span class="who">Rob Matye</span></div><div class="item">Interview for the newsletter</div><div class="cardmeta">waiting 271d · SQPN newsletter</div></div>
+<div class="card"><div class="cardtop"><span class="who">Grady Group</span></div><div class="item">Confirm payment for the next sponsorship period</div><div class="cardmeta">waiting 270d · Continuing Grady Group for JAMW</div></div>
+<div class="card"><div class="cardtop"><span class="who">Board</span></div><div class="item">Schedule Q3 budget review meeting</div><div class="cardmeta">waiting 249d · 2026 Budget</div></div>
+<div class="card"><div class="cardtop"><span class="who">Streamyard</span> <span class="flag soon">due soon</span></div><div class="item">SSW262 recording files</div><div class="cardmeta">waiting 96d · due Jun 8 · Secrets of Star Wars</div></div>
+<div class="card"><div class="cardtop"><span class="who">Streamyard</span></div><div class="item">SSW263 recording files</div><div class="cardmeta">waiting 96d · due Jun 15 · Secrets of Star Wars</div></div>
+<div class="card"><div class="cardtop"><span class="who">Upwork — Keith H.</span></div><div class="item">Server migration proposal follow-up</div><div class="cardmeta">waiting 66d · Server Maintenance</div></div>
+<div class="card"><div class="cardtop"><span class="who">Upwork — Hamza I.</span></div><div class="item">Server migration proposal follow-up</div><div class="cardmeta">waiting 66d · Server Maintenance</div></div>
+<div class="card"><div class="cardtop"><span class="who">Upwork — Jeffrey P.</span></div><div class="item">Server migration proposal follow-up</div><div class="cardmeta">waiting 66d · Server Maintenance</div></div>
+<div class="card"><div class="cardtop"><span class="who">The Beyers</span> <span class="flag soon">due soon</span></div><div class="item">MYS421 Patron Questions P28 — edited video</div><div class="cardmeta">waiting 61d · due Jun 8 · Jimmy Akin&#x27;s Mysterious World</div></div>
+<div class="card"><div class="cardtop"><span class="who">Streamyard</span> <span class="flag soon">due soon</span></div><div class="item">STV012 Monarch — recordings</div><div class="cardmeta">waiting 31d · due Jun 9 · Secrets of TV</div></div>
+<div class="card"><div class="cardtop"><span class="who">Streamyard</span></div><div class="item">STV013 Monarch — recordings</div><div class="cardmeta">waiting 31d · due Jun 16 · Secrets of TV</div></div>
+<div class="card"><div class="cardtop"><span class="who">Linda</span></div><div class="item">Robert Lombaerde $2,000 QCD check — confirm receipt</div><div class="cardmeta">waiting 27d · Patron Management</div></div>
+<div class="card"><div class="cardtop"><span class="who">United Way of Greater KC</span></div><div class="item">Donation — add ACH info once confirmed</div><div class="cardmeta">waiting 23d · Single Action Projects</div></div>
+<div class="card"><div class="cardtop"><span class="who">The Beyers</span></div><div class="item">MYS422 Ark of the Covenant — edited video</div><div class="cardmeta">waiting 16d · due Jun 12 · Jimmy Akin&#x27;s Mysterious World</div></div>
+<div class="card"><div class="cardtop"><span class="who">The Beyers</span></div><div class="item">MYS423 Mel&#x27;s Hole — edited video</div><div class="cardmeta">waiting 16d · due Jun 19 · Jimmy Akin&#x27;s Mysterious World</div></div>
+<div class="card"><div class="cardtop"><span class="who">Jack Baruzzini</span></div><div class="item">SSG265 SG1 Retrospective — recording</div><div class="cardmeta">waiting 13d · due Jun 12 · Secrets of Stargate</div></div>
+<div class="card"><div class="cardtop"><span class="who">Jack Baruzzini</span></div><div class="item">SSG266 Reunion (SGA) — recording</div><div class="cardmeta">waiting 13d · due Jun 19 · Secrets of Stargate</div></div></div></section>
+<section class="col col-vo"><h2>Episodes Awaiting VO<span class="count">1</span></h2><div class="cards"><div class="card"><div class="cardtop"><span class="who">VO artist</span></div><div class="item">MYS422 Ark of the Covenant — VO narration</div><div class="cardmeta">waiting 13d · due Jun 19 · airs Jun 19, 2026</div></div></div></section>
+<section class="col col-sponsors"><h2>Sponsors — Pending<span class="count">0</span></h2><div class="cards"><div class="empty">No sponsors awaiting a reply.</div></div></section>
+</div>
+<footer>19 items where you're not the bottleneck · oldest open wait: 368 days · sources: OmniFocus (Waiting For), Airtable</footer>
+</body></html>
