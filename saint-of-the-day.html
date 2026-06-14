@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="3600">
+<title>Saint of the Day</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #14110f; color: #f3ede4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; justify-content: center; }
+  /* DAKboard is landscape; this is a tall portrait column centered on it.
+     width = min(94vw, 60vh) keeps the column narrower than it is tall. */
+  .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 4vh 2.6vh; }
+  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 2.2vh; margin-bottom: 2.2vh; }
+  .eyebrow { font-size: 1.7vh; letter-spacing: 0.22em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.8vh; }
+  h1 { font-size: 3.9vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
+  .date { font-size: 2.0vh; color: #b8ad9e; margin-top: 1.0vh; letter-spacing: 0.02em; }
+  .rank { display: inline-block; margin-top: 1.2vh; font-size: 1.5vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.5vh 1.6vh; border-radius: 999px; }
+  .saint { flex: 0 0 auto; text-align: center; padding: 1.0vh 0 2.6vh; border-bottom: 1px solid #2c2620; margin-bottom: 2.4vh; }
+  .saint-name { font-size: 3.2vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
+  .saint-sub { font-size: 1.9vh; color: #9fd6ad; margin-top: 0.8vh; font-style: italic; }
+  .saint-blurb { font-size: 2.2vh; color: #e7ded2; line-height: 1.45; margin-top: 1.8vh; }
+  .saint-blurb.quote { font-style: italic; }
+  .saint-blurb.quote::before { content: "\201C"; }
+  .saint-blurb.quote::after { content: "\201D"; }
+  .saint-cite { font-size: 1.5vh; color: #8a8175; margin-top: 1.4vh; }
+  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
+  .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
+  .readings h2 { font-size: 1.7vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.4vh; text-align: center; }
+  .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.6vh; padding: 1.1vh 0; border-bottom: 1px solid #221d18; }
+  .r-label { font-size: 1.8vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
+  .r-cite { font-size: 2.1vh; font-weight: 600; color: #ffffff; text-align: right; }
+  .gist { font-size: 1.9vh; color: #c9bfb0; line-height: 1.5; margin-top: 2.0vh; font-style: italic; text-align: center; }
+  .full-link { display: block; text-align: center; margin-top: 2.2vh; font-size: 1.8vh; font-weight: 600; }
+  footer { text-align: center; font-size: 1.4vh; color: #5c554c; margin-top: 2.6vh; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <header>
+      <div class="eyebrow">Saint &amp; Readings of the Day</div>
+      <h1>Eleventh Sunday in Ordinary Time</h1>
+      <div class="date">Sunday, June 14, 2026</div>
+      <span class="rank">Sunday</span>
+    </header>
+    <section class="saint no-saint">
+      <div class="saint-name">Eleventh Sunday in Ordinary Time</div>
+      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
+    </section>
+    <section class="readings">
+      <h2>Today's Readings</h2>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/exodus/19?2">Exodus 19:2-6a</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/100?1">Psalm 100:1-2, 3, 5</a></span></div>
+      <div class="reading"><span class="r-label">Second Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/romans/5?6">Romans 5:6-11</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/9?36">Matthew 9:36—10:8</a></span></div>
+      <div class="gist">Israel is forged into a kingdom of priests at Sinai, and Jesus, seeing a crowd like sheep without a shepherd, sends the Twelve to gather the lost.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/061426.cfm">Full readings at USCCB →</a>
+    </section>
+    <footer>Updated Sunday, June 14 · 8:47 AM ET</footer>
+  </div>
+</body>
+</html>
