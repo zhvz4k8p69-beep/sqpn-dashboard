@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="1800">
+<title>This Week's Menu</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #14110f; color: #f3ede4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; justify-content: center; }
+  .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 4vh 2.5vh; }
+  header { text-align: center; border-bottom: 2px solid #c8772e; padding-bottom: 2.2vh; margin-bottom: 1.4vh; }
+  h1 { font-size: 4.6vh; font-weight: 800; letter-spacing: 0.04em; color: #f0a35e; text-transform: uppercase; }
+  .range { font-size: 2.2vh; color: #b8ad9e; margin-top: 0.6vh; letter-spacing: 0.02em; }
+  .days { flex: 1; display: flex; flex-direction: column; }
+  .day { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 1.0vh 0.4vh; border-bottom: 1px solid #2c2620; }
+  .day:last-child { border-bottom: none; }
+  .day-head { display: flex; align-items: center; gap: 1.2vh; }
+  .day-name { font-size: 2.5vh; font-weight: 700; color: #f0a35e; text-transform: uppercase; letter-spacing: 0.05em; }
+  .day-date { font-size: 1.9vh; color: #8a8175; }
+  .cook { margin-left: auto; font-size: 1.6vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.5vh 1.4vh; border-radius: 999px; }
+  .cook-dom { background: #1d3a5f; color: #8fc1ff; }
+  .cook-mel { background: #4a2150; color: #e6a8f0; }
+  .cook-both { background: #1d4a3f; color: #7fd8b4; }
+  .meal { font-size: 3.2vh; font-weight: 700; color: #ffffff; margin-top: 0.5vh; line-height: 1.1; }
+  .meal.empty { font-size: 2.4vh; color: #4a443c; font-weight: 400; }
+  .alt { font-size: 2.0vh; color: #b0a698; margin-top: 0.3vh; }
+  .event { font-size: 1.8vh; color: #e8896b; font-style: italic; margin-top: 0.4vh; }
+  footer { text-align: center; font-size: 1.4vh; color: #5c554c; margin-top: 1.4vh; }
+</style>
+</head>
+<body>
+  <div class="frame">
+  <header>
+    <h1>This Week's Menu</h1>
+    <div class="range">June 12 – 18, 2026</div>
+  </header>
+  <div class="days">
+    <div class="day">
+      <div class="day-head"><span class="day-name">FRIDAY</span><span class="day-date">June 12</span><span class="cook cook-dom">Dom</span></div>
+      <div class="meal">Fish and Chips</div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="day-name">SATURDAY</span><span class="day-date">June 13</span></div>
+      <div class="meal">Takeout Pizza</div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="day-name">SUNDAY</span><span class="day-date">June 14</span><span class="cook cook-dom">Dom</span></div>
+      <div class="meal">Cast Iron Pork Fajitas</div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="day-name">MONDAY</span><span class="day-date">June 15</span><span class="cook cook-dom">Dom</span></div>
+      <div class="meal">Hamburgers and Hot Dogs</div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="day-name">TUESDAY</span><span class="day-date">June 16</span><span class="cook cook-dom">Dom</span></div>
+      <div class="meal">Pork Chops</div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="day-name">WEDNESDAY</span><span class="day-date">June 17</span><span class="cook cook-mel">Melanie</span></div>
+      <div class="meal">Pork Rice Bowls</div>
+    </div>
+    <div class="day">
+      <div class="day-head"><span class="day-name">THURSDAY</span><span class="day-date">June 18</span><span class="cook cook-both">Dom &amp; Melanie</span></div>
+      <div class="meal">Gluten Free Pasta Salad</div>
+    </div>
+  </div>
+  <footer>Updated Sunday, June 14 · 8:22 AM ET</footer>
+  </div>
+</body>
+</html>
