@@ -11,22 +11,22 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 4vh 2.6vh; }
-  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 2.2vh; margin-bottom: 2.2vh; }
-  .eyebrow { font-size: 1.7vh; letter-spacing: 0.22em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.8vh; }
-  h1 { font-size: 3.9vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 2.2vh; margin-bottom: 2.2vh; }
+  .eyebrow { font-size: 1.7vh; letter-spacing: 0.22em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.8vh; }
+  h1 { font-size: 3.9vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
   .date { font-size: 2.0vh; color: #b8ad9e; margin-top: 1.0vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.2vh; font-size: 1.5vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.5vh 1.6vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.2vh; font-size: 1.5vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.5vh 1.6vh; border-radius: 999px; }
   .saint { flex: 0 0 auto; text-align: center; padding: 1.0vh 0 2.6vh; border-bottom: 1px solid #2c2620; margin-bottom: 2.4vh; }
   .saint-name { font-size: 3.2vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.9vh; color: #9fd6ad; margin-top: 0.8vh; font-style: italic; }
+  .saint-sub { font-size: 1.9vh; color: #ecd9a6; margin-top: 0.8vh; font-style: italic; }
   .saint-blurb { font-size: 2.2vh; color: #e7ded2; line-height: 1.45; margin-top: 1.8vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.5vh; color: #8a8175; margin-top: 1.4vh; }
-  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.7vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.4vh; text-align: center; }
+  .readings h2 { font-size: 1.7vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.4vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.6vh; padding: 1.1vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.8vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 2.1vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -39,23 +39,25 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Friday of the Twelfth Week in Ordinary Time</h1>
-      <div class="date">Friday, June 26, 2026</div>
+      <h1>Saturday of the Twelfth Week in Ordinary Time</h1>
+      <div class="date">Saturday, June 27, 2026</div>
       <span class="rank">Weekday</span>
     </header>
-    <section class="saint no-saint">
-      <div class="saint-name">Friday of the Twelfth Week in Ordinary Time</div>
-      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
+    <section class="saint">
+      <div class="saint-name">Saint Cyril of Alexandria</div>
+      <div class="saint-sub">Bishop and Doctor of the Church</div>
+      <div class="saint-blurb">Cyril presided as the pope&#x27;s representative at the Council of Ephesus in 431, where he condemned Nestorianism and secured Mary&#x27;s title Theotokos — &quot;God-bearer&quot; — establishing that the one Person in Christ is both fully God and fully human. He died on June 27, 444.</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-cyril-of-alexandria/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/2kings/25?1">2 Kings 25:1-12</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/137?1">Psalm 137:1-2, 3, 4-5, 6</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/8?1">Matthew 8:1-4</a></span></div>
-      <div class="gist">Babylon destroys Jerusalem and marches the people into captivity; Jesus descends the mountain and, with a touch, makes a leper clean.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/062626.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/lamentations/2?2">Lamentations 2:2, 10-14, 18-19</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/74?1">Psalm 74:1b-2, 3-5, 6-7, 20-21</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/8?5">Matthew 8:5-17</a></span></div>
+      <div class="gist">Jerusalem lies shattered in Lamentations, and Psalm 74 begs God not to forget the afflicted; the Gospel answers with the centurion&#x27;s faith and Jesus healing everyone brought to him — fulfilling Isaiah&#x27;s word that he bore our diseases.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/062726.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Friday, June 26 · 5:36 AM ET</footer>
+    <footer>Updated Saturday, June 27 · 5:37 AM ET</footer>
   </div>
 </body>
 </html>
