@@ -11,22 +11,22 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 4vh 2.6vh; }
-  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 2.2vh; margin-bottom: 2.2vh; }
-  .eyebrow { font-size: 1.7vh; letter-spacing: 0.22em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.8vh; }
-  h1 { font-size: 3.9vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 2.2vh; margin-bottom: 2.2vh; }
+  .eyebrow { font-size: 1.7vh; letter-spacing: 0.22em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.8vh; }
+  h1 { font-size: 3.9vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
   .date { font-size: 2.0vh; color: #b8ad9e; margin-top: 1.0vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.2vh; font-size: 1.5vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.5vh 1.6vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.2vh; font-size: 1.5vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.5vh 1.6vh; border-radius: 999px; }
   .saint { flex: 0 0 auto; text-align: center; padding: 1.0vh 0 2.6vh; border-bottom: 1px solid #2c2620; margin-bottom: 2.4vh; }
   .saint-name { font-size: 3.2vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.9vh; color: #ecae9d; margin-top: 0.8vh; font-style: italic; }
+  .saint-sub { font-size: 1.9vh; color: #ecd9a6; margin-top: 0.8vh; font-style: italic; }
   .saint-blurb { font-size: 2.2vh; color: #e7ded2; line-height: 1.45; margin-top: 1.8vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.5vh; color: #8a8175; margin-top: 1.4vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.7vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.4vh; text-align: center; }
+  .readings h2 { font-size: 1.7vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.4vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.6vh; padding: 1.1vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.8vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 2.1vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -39,25 +39,25 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Tuesday of the Thirteenth Week in Ordinary Time</h1>
-      <div class="date">Tuesday, June 30, 2026</div>
-      <span class="rank">Optional Memorial</span>
+      <h1>Wednesday of the Thirteenth Week in Ordinary Time</h1>
+      <div class="date">Wednesday, July 1, 2026</div>
+      <span class="rank">Weekday</span>
     </header>
     <section class="saint">
-      <div class="saint-name">First Holy Martyrs of the Holy Roman Church</div>
-      <div class="saint-sub">Martyrs</div>
-      <div class="saint-blurb">Nero blamed Christians for the Great Fire of Rome in 64 AD and executed them en masse. The historian Tacitus recorded the charge as &quot;hatred of the human race&quot; — the earliest documented persecution of Christians in the city.</div>
-      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/first-martyrs-of-the-church-of-rome/">Franciscan Media</a></div>
+      <div class="saint-name">Saint Junipero Serra</div>
+      <div class="saint-sub">Priest</div>
+      <div class="saint-blurb">A Spanish Franciscan born in Mallorca in 1713, Serra left behind a career as a university theology professor to work as a missionary, walking hundreds of miles through Mexico before founding nine California missions beginning with San Diego in 1769. Pope Francis canonized him on September 23, 2015 in Washington, D.C., the first canonization on North American soil.</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-junipero-serra/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/amos/3?1">Amos 3:1-8; 4:11-12</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/5?4">Psalm 5:4b-6a, 6b-7, 8</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/8?23">Matthew 8:23-27</a></span></div>
-      <div class="gist">Amos puts Israel on notice that being chosen means being held to account, while Jesus stills a storm on the sea and asks his terrified disciples why they still haven&#x27;t learned to trust.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/063026.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/amos/5?14">Amos 5:14-15, 21-24</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/50?7">Psalm 50:7, 8-9, 10-11, 12-13, 16-17</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/8?28">Matthew 8:28-34</a></span></div>
+      <div class="gist">Amos denounces hollow worship that ignores justice, the psalm reminds us God needs nothing from us but fidelity, and in Matthew Jesus drives out the Gadarene demons — only to be asked by the frightened locals to leave.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/070126.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Tuesday, June 30 · 5:37 AM ET</footer>
+    <footer>Updated Wednesday, July 1 · 5:38 AM ET</footer>
   </div>
 </body>
 </html>
