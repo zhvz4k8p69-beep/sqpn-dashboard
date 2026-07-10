@@ -11,22 +11,22 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #9fd6ad; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -39,25 +39,22 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Thursday of the Fourteenth Week in Ordinary Time</h1>
-      <div class="date">Thursday, July 9, 2026</div>
-      <span class="rank">Optional Memorial</span>
+      <h1>Friday of the Fourteenth Week in Ordinary Time</h1>
+      <div class="date">Friday, July 10, 2026</div>
+      <span class="rank">Weekday</span>
     </header>
-    <section class="saint">
-      <div class="saint-name">Saint Augustine Zhao Rong and Companions</div>
-      <div class="saint-sub">Priest and Martyrs</div>
-      <div class="saint-blurb">Augustine Zhao Rong was a Chinese soldier who escorted a French bishop to his execution in Beijing, then converted and was later ordained a priest himself. He was martyred in 1815, one of 120 Chinese martyrs killed between 1648 and 1930 and canonized together by Pope John Paul II in 2000.</div>
-      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-augustine-zhao-rong-and-companions/">Franciscan Media</a></div>
+    <section class="saint no-saint">
+      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/hosea/11?1">Hosea 11:1-4, 8e-9</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/80?2">Psalm 80:2ac, 3b, 15-16</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/10?7">Matthew 10:7-15</a></span></div>
-      <div class="gist">God refuses to give up on an unfaithful Israel, and Jesus sends the Twelve out to heal and preach with nothing but the message that the kingdom is at hand.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/070926.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/hosea/14?2">Hosea 14:2-10</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/51?3">Psalm 51:3-4, 8-9, 12-13, 14, 17</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/10?16">Matthew 10:16-23</a></span></div>
+      <div class="gist">Hosea promises God will heal Israel&#x27;s unfaithfulness with love freely given, and Jesus tells the apostles that same fidelity will get them hated and hauled into court — the one who holds out to the end is saved.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/071026.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Thursday, July 9 · 5:35 AM ET</footer>
+    <footer>Updated Friday, July 10 · 5:35 AM ET</footer>
   </div>
 </body>
 </html>
