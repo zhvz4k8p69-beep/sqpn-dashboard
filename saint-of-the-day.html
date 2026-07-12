@@ -11,22 +11,22 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #9fd6ad; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -39,25 +39,23 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Memorial of Saint Benedict, Abbot</h1>
-      <div class="date">Saturday, July 11, 2026</div>
-      <span class="rank">Memorial</span>
+      <h1>Fifteenth Sunday in Ordinary Time</h1>
+      <div class="date">Sunday, July 12, 2026</div>
+      <span class="rank">Sunday</span>
     </header>
-    <section class="saint">
-      <div class="saint-name">Saint Benedict</div>
-      <div class="saint-sub">Abbot</div>
-      <div class="saint-blurb">Benedict built the monastery at Monte Cassino and wrote a Rule of prayer, work, and community life for the monks who followed it. That Rule became the standard for monasticism across the West, which is why he&#x27;s patron saint of Europe.</div>
-      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-benedict/">Franciscan Media</a></div>
+    <section class="saint no-saint">
+      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/isaiah/6?1">Isaiah 6:1-8</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/93?1">Psalm 93:1ab, 1cd-2, 5</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/10?24">Matthew 10:24-33</a></span></div>
-      <div class="gist">Isaiah sees God&#x27;s throne room and answers the call with &quot;here I am, send me,&quot; and Jesus tells his disciples to stop being afraid and say his name out loud.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/071126.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/isaiah/55?10">Isaiah 55:10-11</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/65?10">Psalm 65:10, 11, 12-13, 14</a></span></div>
+      <div class="reading"><span class="r-label">Second Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/romans/8?18">Romans 8:18-23</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/13?1">Matthew 13:1-23</a></span></div>
+      <div class="gist">Isaiah says God&#x27;s word never comes back empty, and Jesus explains why in the parable of the sower: the word does its work, but the harvest depends on the soil it lands in.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/071226.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Saturday, July 11 · 5:35 AM ET</footer>
+    <footer>Updated Sunday, July 12 · 5:35 AM ET</footer>
   </div>
 </body>
 </html>
