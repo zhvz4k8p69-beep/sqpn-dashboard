@@ -10,7 +10,7 @@
 body { background: #0f0f12; color: #e8e8f0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; padding: 18px 20px; min-height: 100vh; }
 h1 { font-size: 1.4rem; font-weight: 600; color: #9090b0; margin-bottom: 2px; }
 .updated { font-size: 0.8rem; color: #555; margin-bottom: 14px; }
-.grid-top { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 12px; }
+.grid-top { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 12px; }
 .grid-mid { display: grid; grid-template-columns: 1fr 1.5fr; gap: 12px; margin-bottom: 12px; align-items: start; }
 .section { background: #1a1a24; border-radius: 9px; padding: 14px 16px; }
 h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #5858a0; margin-bottom: 9px; }
@@ -23,6 +23,12 @@ h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform
 .none { color: #444; font-style: italic; font-size: 0.85rem; }
 .overdue { color: #e87070; }
 .date-label { font-weight: 600; color: #e86060; min-width: 64px; display: inline-block; }
+.wp-mark { display: inline-block; width: 13px; font-weight: 700; }
+.wp-title { font-weight: 600; color: #d0d0e8; }
+.wp-done .wp-mark { color: #50c878; }
+.wp-done .wp-title { color: #5a5a70; text-decoration: line-through; }
+.wp-todo .wp-mark { color: #f0a060; }
+.wp-none .wp-mark { color: #3a3a48; }
 .feedback-row { display: flex; gap: 16px; padding: 6px 0; }
 .feedback-show { text-align: center; flex: 1; }
 .feedback-count { font-size: 2rem; font-weight: 700; color: #d0d0e8; line-height: 1; }
@@ -44,11 +50,11 @@ h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform
 </head>
 <body>
 <h1>StarQuest Dashboard</h1>
-<div class="updated">Updated Thursday, July 16 · 3:05 PM ET</div>
+<div class="updated">Updated Thursday, July 16 · 3:11 PM ET</div>
 
 <div class="grid-top">
 
-                      <div class="section">
+                        <div class="section">
     <h2>Overdue Tasks</h2>
     <div class="item ok">Nothing overdue.</div>
   </div>
@@ -93,7 +99,35 @@ h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform
     </div>
   </div>
 
-                      <div class="section">
+    <div class="section">
+    <h2>Watch Before Recording</h2>
+      <div class="item wp-none">
+        <span class="wp-mark">&#8212;</span><span class="date-label">Today</span><span class="wp-title">The Secrets of Goonies</span>
+        <div class="meta">SCR199 &middot; not tracked</div>
+      </div>
+      <div class="item wp-none">
+        <span class="wp-mark">&#8212;</span><span class="date-label">Sat 7/18</span><span class="wp-title">The Secrets of the Movies That Made Us</span>
+        <div class="meta">SCR200 &middot; not tracked</div>
+      </div>
+      <div class="item wp-done">
+        <span class="wp-mark">&#10003;</span><span class="date-label">Mon 7/20</span><span class="wp-title">Monarch, S2: Separate Ways</span>
+        <div class="meta">STV018 &middot; S02E08 &middot; watched</div>
+      </div>
+      <div class="item wp-todo">
+        <span class="wp-mark">&#9675;</span><span class="date-label">Mon 7/20</span><span class="wp-title">The Practical Joker (TAS)</span>
+        <div class="meta">SST435 &middot; S02E03 &middot; not watched</div>
+      </div>
+      <div class="item wp-todo">
+        <span class="wp-mark">&#9675;</span><span class="date-label">Mon 7/20</span><span class="wp-title">Silo, S3: It&#x27;s All Good</span>
+        <div class="meta">STV022 &middot; S03E02 &middot; not watched</div>
+      </div>
+      <div class="item wp-none">
+        <span class="wp-mark">&#8212;</span><span class="date-label">Thu 7/23</span><span class="wp-title">The Secrets of From Russia With Love</span>
+        <div class="meta">SCR202 &middot; not tracked</div>
+      </div>
+  </div>
+
+                        <div class="section">
     <h2>Feedback &#8212; Pending</h2>
     <div class="feedback-row">
       <div class="feedback-show">
@@ -116,7 +150,7 @@ h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform
 <div class="grid-mid">
 
   <div class="yt-fit">
-                        <div class="section">
+                          <div class="section">
     <h2>YouTube &#8212; Recent Videos</h2>
     <div class="yt-videos">
       <div class="yt-item"><span class="yt-title">The Secrets of One Last Monster</span><span class="yt-views">5 views</span><span class="yt-date">2026-07-16</span></div>
@@ -124,7 +158,7 @@ h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform
       <div class="yt-item"><span class="yt-title">Monarch, S2: String Theory</span><span class="yt-views">12 views</span><span class="yt-date">2026-07-15</span></div>
       <div class="yt-item"><span class="yt-title">Roverandom</span><span class="yt-views">84 views</span><span class="yt-date">2026-07-14</span></div>
       <div class="yt-item"><span class="yt-title">The Mercy Scene That Was Secretly a Bluff</span><span class="yt-views">184 views</span><span class="yt-date">2026-07-14</span></div>
-      <div class="yt-item"><span class="yt-title">The Million-Dollar Boba Fett: A Star Wars Toy Retrospective</span><span class="yt-views">18 views</span><span class="yt-date">2026-07-14</span></div>
+      <div class="yt-item"><span class="yt-title">The Million-Dollar Boba Fett: A Star Wars Toy Retrospective</span><span class="yt-views">19 views</span><span class="yt-date">2026-07-14</span></div>
       <div class="yt-item"><span class="yt-title">&quot;Persistence of Vision&quot; (S2E8): Voyager&#x27;s Hallucination Horror No Explanation — Secrets of Star Trek</span><span class="yt-views">150 views</span><span class="yt-date">2026-07-13</span></div>
       <div class="yt-item"><span class="yt-title">&quot;Hit Her Back!&quot; — A Stargate Fight Scene Debate</span><span class="yt-views">115 views</span><span class="yt-date">2026-07-13</span></div>
       <div class="yt-item"><span class="yt-title">The Keys of the Kingdom</span><span class="yt-views">25 views</span><span class="yt-date">2026-07-13</span></div>
@@ -160,7 +194,7 @@ h2 { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform
 </div>
 
 <div class="tasks-wide">
-                      <div class="section">
+                        <div class="section">
     <h2>Tasks Due Today</h2>
       <div class="item">
         <span class="label">Record Secrets of The Goonies</span>
