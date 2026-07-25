@@ -11,22 +11,22 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -39,25 +39,25 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Friday of the Sixteenth Week in Ordinary Time</h1>
-      <div class="date">Friday, July 24, 2026</div>
-      <span class="rank">Weekday</span>
+      <h1>Feast of Saint James, Apostle</h1>
+      <div class="date">Saturday, July 25, 2026</div>
+      <span class="rank">Feast</span>
     </header>
     <section class="saint">
-      <div class="saint-name">Saint Sharbel Makhlouf</div>
-      <div class="saint-sub">Priest</div>
-      <div class="saint-blurb">Sharbel Makhlouf left his Lebanese village once, to join a monastery, then spent his last 23 years as a hermit devoted to the Eucharist and quietly sought out for his holiness. Pope Paul VI beatified him in 1965 and canonized him in 1977, after his body was found incorrupt.</div>
-      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-sharbel-makhlouf/">Franciscan Media</a></div>
+      <div class="saint-name">Saint James</div>
+      <div class="saint-sub">Apostle</div>
+      <div class="saint-blurb">James was the first of the Twelve apostles to be martyred. Herod Agrippa had him beheaded around AD 44, the earliest recorded apostolic martyrdom (Acts 12:1-3).</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-james/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/jeremiah/3?14">Jeremiah 3:14-17</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/jeremiah/31?10">Jeremiah 31:10, 11-12abcd, 13</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/13?18">Matthew 13:18-23</a></span></div>
-      <div class="gist">God promises to gather and shepherd his scattered people, while Jesus explains that his word takes root only in a heart ready to receive it.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/072426.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/2corinthians/4?7">2 Corinthians 4:7-15</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/126?1">Psalm 126:1bc-2ab, 2cd-3, 4-5, 6</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/20?20">Matthew 20:20-28</a></span></div>
+      <div class="gist">Paul says we carry God&#x27;s power like treasure in cracked jars, afflicted but never crushed; James&#x27;s mother asks him a throne, and Jesus answers with a cup of suffering, teaching that greatness means service, not rule.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/072526.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Friday, July 24 · 5:36 AM ET</footer>
+    <footer>Updated Saturday, July 25 · 5:36 AM ET</footer>
   </div>
 </body>
 </html>
