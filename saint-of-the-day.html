@@ -11,22 +11,22 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #9fd6ad; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -39,22 +39,24 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Tuesday of the Seventeenth Week in Ordinary Time</h1>
-      <div class="date">Tuesday, July 28, 2026</div>
-      <span class="rank">Weekday</span>
+      <h1>Memorial of Saints Martha, Mary, and Lazarus</h1>
+      <div class="date">Wednesday, July 29, 2026</div>
+      <span class="rank">Memorial</span>
     </header>
-    <section class="saint no-saint">
-      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
+    <section class="saint">
+      <div class="saint-name">Saints Martha, Mary, and Lazarus</div>
+      <div class="saint-blurb">Pope Francis added Mary and Lazarus to this memorial in 2021, expanding what had been a feast for Martha alone. The Vatican&#x27;s decree praised the hospitality, attentiveness, and faith all three siblings showed Jesus in their home at Bethany.</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saints-martha-mary-and-lazarus/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/jeremiah/14?17">Jeremiah 14:17-22</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/79?8">Psalm 79:8, 9, 11 and 13</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/13?36">Matthew 13:36-43</a></span></div>
-      <div class="gist">Jeremiah begs God not to abandon a nation reeling from war and famine, and Jesus tells his disciples the weeds among the wheat get sorted from the good grain only at the harvest, not before.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/072826.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/jeremiah/15?10">Jeremiah 15:10, 16-21</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/59?2">Psalm 59:2-3, 4, 10-11, 17, 18</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/john/11?19">John 11:19-27</a></span></div>
+      <div class="gist">Jeremiah cries out under the weight of his calling and hears God promise to make him a wall of brass against his enemies, while Martha meets the grieving crowd at Bethany and hears Jesus say, &quot;I am the resurrection and the life.&quot;</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/072926.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Tuesday, July 28 · 5:35 AM ET</footer>
+    <footer>Updated Wednesday, July 29 · 5:36 AM ET</footer>
   </div>
 </body>
 </html>
