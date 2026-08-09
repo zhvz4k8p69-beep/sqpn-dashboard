@@ -11,22 +11,22 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #9fd6ad; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -39,25 +39,23 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Memorial of Saint Dominic, Priest</h1>
-      <div class="date">Saturday, August 8, 2026</div>
-      <span class="rank">Memorial</span>
+      <h1>Nineteenth Sunday in Ordinary Time</h1>
+      <div class="date">Sunday, August 9, 2026</div>
+      <span class="rank">Sunday</span>
     </header>
-    <section class="saint">
-      <div class="saint-name">Saint Dominic</div>
-      <div class="saint-sub">Priest</div>
-      <div class="saint-blurb">Dominic watched the Church&#x27;s preachers lose ground to the Albigensian ascetics because the preachers rode fine horses and stayed at the best inns while the heretics lived like beggars. So he ditched the comfort, started preaching on foot with three Cistercians, and ten years of that itinerant work became the Order of Preachers, founded at Toulouse in 1215.</div>
-      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-dominic/">Franciscan Media</a></div>
+    <section class="saint no-saint">
+      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/habakkuk/1?12">Habakkuk 1:12—2:4</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/9?8">Psalm 9:8-9, 10-11, 12-13</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/17?14">Matthew 17:14-20</a></span></div>
-      <div class="gist">Habakkuk demands to know why evil goes unpunished and is told to write the vision down and wait for it; the apostles&#x27; failed exorcism becomes Jesus&#x27; lesson that mustard-seed faith moves mountains.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/memorial-saint-dominic-priest">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/1kings/19?9">1 Kings 19:9a, 11-13a</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/85?9">Psalm 85:9, 10, 11-12, 13-14</a></span></div>
+      <div class="reading"><span class="r-label">Second Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/romans/9?1">Romans 9:1-5</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/14?22">Matthew 14:22-33</a></span></div>
+      <div class="gist">Elijah finds God not in wind, earthquake, or fire but in a whisper, and Peter finds out how far faith gets him once he takes his eyes off Jesus and looks at the waves.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/080926.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Saturday, August 8 · 5:36 AM ET</footer>
+    <footer>Updated Sunday, August 9 · 5:35 AM ET</footer>
   </div>
 </body>
 </html>
