@@ -11,23 +11,23 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .superseded { font-size: 1.2vh; color: #6b6459; margin-top: 0.9vh; font-style: italic; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -40,25 +40,26 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Feast of Saint Bartholomew, Apostle</h1>
-      <div class="date">Monday, August 24, 2026</div>
-      <span class="rank">Feast</span>
+      <h1>Tuesday of the Twenty-first Week in Ordinary Time</h1>
+      <div class="date">Tuesday, August 25, 2026</div>
+      <span class="rank">Weekday</span>
     </header>
     <section class="saint">
-      <div class="saint-name">Saint Bartholomew</div>
-      <div class="saint-sub">Apostle</div>
-      <div class="saint-blurb">The Roman Martyrology says Bartholomew preached in India and Armenia, where King Astyages had him flayed alive and beheaded. It&#x27;s why Renaissance art, including Michelangelo&#x27;s Last Judgment, shows him holding his own skin.</div>
-      <div class="saint-cite">Source: <a href="https://www.catholic.org/saints/saint.php?saint_id=390">Catholic Online</a></div>
+      <div class="saint-name">Saint Louis of France</div>
+      <div class="saint-sub">King</div>
+      <div class="saint-blurb">Every day Louis IX had thirteen guests from among the poor eat with him at his own table, and during Advent and Lent he served meals to the poor near his palace in person.</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-louis-of-france/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/revelation/21?9">Revelation 21:9b-14</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/145?10">Psalm 145:10-11, 12-13, 17-18</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/john/1?45">John 1:45-51</a></span></div>
-      <div class="gist">The apostles&#x27; names anchor the foundation stones of the New Jerusalem, and it&#x27;s Philip&#x27;s plain invitation, come and see, that actually brings Nathanael to Jesus.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/082426.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/2thessalonians/2?1">2 Thessalonians 2:1-3a, 14-17</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/96?10">Psalm 96:10, 11-12, 13</a></span></div>
+      <div class="reading"><span class="r-label">Alleluia</span><span class="r-cite"><a href="https://bible.usccb.org/bible/hebrews/4?12">Hebrews 4:12</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/matthew/23?23">Matthew 23:23-26</a></span></div>
+      <div class="gist">Paul tells the Thessalonians not to be rattled by rumors about the Day of the Lord and to hold to what they were taught, and Jesus tells the scribes and Pharisees they&#x27;ve perfected tithing while dropping justice, mercy, and fidelity.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/082526.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Monday, August 24 · 5:38 AM ET</footer>
+    <footer>Updated Tuesday, August 25 · 5:36 AM ET</footer>
   </div>
 </body>
 </html>
