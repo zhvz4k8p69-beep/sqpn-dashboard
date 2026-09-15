@@ -11,23 +11,23 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .superseded { font-size: 1.2vh; color: #6b6459; margin-top: 0.9vh; font-style: italic; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -40,25 +40,24 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Feast of the Exaltation of the Holy Cross</h1>
-      <div class="date">Monday, September 14, 2026</div>
-      <span class="rank">Feast</span>
+      <h1>Memorial of Our Lady of Sorrows</h1>
+      <div class="date">Tuesday, September 15, 2026</div>
+      <span class="rank">Memorial</span>
     </header>
     <section class="saint">
-      <div class="saint-name">The Exaltation of the Holy Cross</div>
-      <div class="saint-blurb">Saint Helena&#x27;s fourth-century excavation in Jerusalem turned up the cross tradition holds Christ died on, and pilgrims were soon lining up to kiss it. Three centuries later Emperor Heraclius won it back from the Persians, but couldn&#x27;t carry it into Jerusalem until he took off his royal robes and walked in as a barefoot pilgrim.</div>
-      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/exaltation-of-the-holy-cross/">Franciscan Media</a></div>
+      <div class="saint-name">Our Lady of Sorrows</div>
+      <div class="saint-blurb">The title traces to two Gospel scenes: Simeon warning Mary that a sword would pierce her heart, and Jesus handing her to John from the cross. The Church reads the first as prophecy and the second as its fulfillment.</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/our-lady-of-sorrows/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/numbers/21?4">Numbers 21:4b-9</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/78?1">Psalm 78:1bc-2, 34-35, 36-37, 38</a></span></div>
-      <div class="reading"><span class="r-label">Second Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/philippians/2?6">Philippians 2:6-11</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/john/3?13">John 3:13-17</a></span></div>
-      <div class="gist">The bronze serpent Moses lifts up to heal a snake-bitten people becomes John&#x27;s image for the cross itself: something raised up not to condemn but to save anyone who looks to it in faith.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/091426.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/1corinthians/12?12">1 Corinthians 12:12-14, 27-31a</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/100?1">Psalm 100:1b-2, 3, 4, 5</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/john/19?25">John 19:25-27</a></span></div>
+      <div class="gist">Paul says one Spirit binds many parts into a single body, and from the cross Jesus hands his mother to the beloved disciple, making her mother to the whole Church.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/091526.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Monday, September 14 · 5:37 AM ET</footer>
+    <footer>Updated Tuesday, September 15 · 5:37 AM ET</footer>
   </div>
 </body>
 </html>
