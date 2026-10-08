@@ -11,23 +11,23 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .superseded { font-size: 1.2vh; color: #6b6459; margin-top: 0.9vh; font-style: italic; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #9fd6ad; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -40,24 +40,22 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Memorial of Our Lady of the Rosary</h1>
-      <div class="date">Wednesday, October 7, 2026</div>
-      <span class="rank">Memorial</span>
+      <h1>Thursday of the Twenty-seventh Week in Ordinary Time</h1>
+      <div class="date">Thursday, October 8, 2026</div>
+      <span class="rank">Weekday</span>
     </header>
-    <section class="saint">
-      <div class="saint-name">Our Lady of the Rosary</div>
-      <div class="saint-blurb">This memorial marks the 1571 Battle of Lepanto, where a Christian fleet beat back the Ottoman navy on the same day Pope St. Pius V had called the faithful to pray the Rosary for victory. Pius credited the win to those prayers and set a feast for it; his successor, Gregory XIII, renamed it Our Lady of the Rosary.</div>
-      <div class="saint-cite">Source: <a href="https://ewtnnews.com/world/a-saint-and-a-sea-battle-how-the-rosary-saved-christian-europe">EWTN News</a></div>
+    <section class="saint no-saint">
+      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/galatians/2?1">Galatians 2:1-2, 7-14</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/117?1">Psalm 117:1bc, 2</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/11?1">Luke 11:1-4</a></span></div>
-      <div class="gist">Paul calls out Peter for caving to pressure and splitting the table over Jewish and Gentile believers, and Jesus answers his disciples&#x27; question about prayer by handing them the Our Father.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/100726.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/galatians/3?1">Galatians 3:1-5</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/1?69">Luke 1:69-70, 71-72, 73-75</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/11?5">Luke 11:5-13</a></span></div>
+      <div class="gist">Paul asks the Galatians whether they received the Spirit through the law or through faith, and Jesus tells the parable of the persistent friend at midnight: ask, seek, knock, and the Father will give the Holy Spirit to those who ask.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/100826.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Wednesday, October 7 · 5:43 AM ET</footer>
+    <footer>Updated Thursday, October 8 · 5:42 AM ET</footer>
   </div>
 </body>
 </html>
