@@ -11,23 +11,23 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .superseded { font-size: 1.2vh; color: #6b6459; margin-top: 0.9vh; font-style: italic; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -40,25 +40,25 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Wednesday of the Twenty-eighth Week in Ordinary Time</h1>
-      <div class="date">Wednesday, October 14, 2026</div>
-      <span class="rank">Optional Memorial</span>
+      <h1>Memorial of Saint Teresa of Jesus, Virgin and Doctor of the Church</h1>
+      <div class="date">Thursday, October 15, 2026</div>
+      <span class="rank">Memorial</span>
     </header>
     <section class="saint">
-      <div class="saint-name">Saint Callistus I</div>
-      <div class="saint-sub">Pope and Martyr</div>
-      <div class="saint-blurb">As pope from around 217, he reached out to Christians estranged by earlier schisms and readmitted repentant sinners to communion — a mercy so controversial that the priest Hippolytus broke away and set himself up as a rival bishop, the Church&#x27;s first antipope. Callistus was martyred around 222, reportedly thrown down a well during a riot.</div>
-      <div class="saint-cite">Source: <a href="https://www.vaticanstate.va/en/state-and-government/general-informations/saint-of-the-day/2827-october-14-saint-callistus-i-pope-and-martyr.html">Vatican City State</a></div>
+      <div class="saint-name">Saint Teresa of Jesus</div>
+      <div class="saint-sub">Virgin and Doctor of the Church</div>
+      <div class="saint-blurb">In 1970, Pope Paul VI named her a Doctor of the Church. She and Catherine of Siena became the first women ever given that title.</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-teresa-of-avila/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/galatians/5?18">Galatians 5:18-25</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/1?1">Psalm 1:1-2, 3, 4, 6</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/11?42">Luke 11:42-46</a></span></div>
-      <div class="gist">Paul contrasts the fruit of the Spirit with the works of the flesh, while Jesus confronts religious leaders who pile burdens on others but lift no finger to help.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/101426.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/ephesians/1?1">Ephesians 1:1-10</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/98?1">Psalm 98:1, 2-3ab, 3cd-4, 5-6</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/11?47">Luke 11:47-54</a></span></div>
+      <div class="gist">Paul blesses God for choosing us before the world began, and Jesus tells the scribes they built tombs for the prophets their own fathers killed.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/101526.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Wednesday, October 14 · 5:45 AM ET</footer>
+    <footer>Updated Thursday, October 15 · 5:47 AM ET</footer>
   </div>
 </body>
 </html>
