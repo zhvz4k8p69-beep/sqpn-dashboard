@@ -11,23 +11,23 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d9b65f; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d9b65f; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d9b65f; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .superseded { font-size: 1.2vh; color: #6b6459; margin-top: 0.9vh; font-style: italic; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecd9a6; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecd9a6; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecd9a6; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -40,25 +40,25 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Friday of the Twenty-eighth Week in Ordinary Time</h1>
-      <div class="date">Friday, October 16, 2026</div>
-      <span class="rank">Weekday</span>
+      <h1>Memorial of Saint Ignatius of Antioch, Bishop and Martyr</h1>
+      <div class="date">Saturday, October 17, 2026</div>
+      <span class="rank">Memorial</span>
     </header>
     <section class="saint">
-      <div class="saint-name">Saint Hedwig</div>
-      <div class="saint-sub">Religious</div>
-      <div class="saint-blurb">At her urging, her husband Duke Henry the Bearded founded a Cistercian convent at Trebnitz, near Breslau, paid for out of her own dowry. After he died, she moved in and spent her final years caring for the sick and poor there, never taking vows herself.</div>
-      <div class="saint-cite">Source: <a href="https://www.ewtn.com/catholicism/saints/hedwig-598">EWTN</a></div>
+      <div class="saint-name">Saint Ignatius of Antioch</div>
+      <div class="saint-sub">Bishop and Martyr</div>
+      <div class="saint-blurb quote">Bishop of Antioch, arrested under Trajan around the year 107 and marched to Rome to be killed in the arena. On the journey he wrote seven letters that are among the earliest Christian writings outside the New Testament. In his Letter to the Romans he begged the Roman church not to intervene to save him: &quot;Give me nothing more than that I may be poured out as a libation to God, while yet there is an altar ready.&quot;</div>
+      <div class="saint-cite">Source: <a href="https://earlychristianwritings.com/srawley/romans.html">Letter to the Romans, ch. 2 (Roberts-Donaldson translation)</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/ephesians/1?11">Ephesians 1:11-14</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/33?1">Psalm 33:1-2, 4-5, 12-13</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/12?1">Luke 12:1-7</a></span></div>
-      <div class="gist">Paul says the Spirit marks us as God&#x27;s own inheritance, and Jesus tells the crowd not to fear hypocrisy or those who can only kill the body, since God counts every hair on their heads.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/101626.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/ephesians/1?15">Ephesians 1:15-23</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/8?2">Psalm 8:2-3ab, 4-5, 6-7</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/12?8">Luke 12:8-12</a></span></div>
+      <div class="gist">Christ is exalted over all creation, and the Spirit gives Jesus&#x27; disciples the words to witness to him boldly even on trial.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/101726.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Friday, October 16 · 5:46 AM ET</footer>
+    <footer>Updated Saturday, October 17 · 5:45 AM ET</footer>
   </div>
 </body>
 </html>
