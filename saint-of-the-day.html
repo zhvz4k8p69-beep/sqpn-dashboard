@@ -11,23 +11,23 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .superseded { font-size: 1.2vh; color: #6b6459; margin-top: 0.9vh; font-style: italic; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #9fd6ad; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -40,22 +40,25 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Tuesday of the Thirtieth Week in Ordinary Time</h1>
-      <div class="date">Tuesday, October 27, 2026</div>
-      <span class="rank">Weekday</span>
+      <h1>Feast of Saints Simon and Jude, Apostles</h1>
+      <div class="date">Wednesday, October 28, 2026</div>
+      <span class="rank">Feast</span>
     </header>
-    <section class="saint no-saint">
-      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
+    <section class="saint">
+      <div class="saint-name">Saints Simon and Jude</div>
+      <div class="saint-sub">Apostles</div>
+      <div class="saint-blurb">Jude gets only four mentions in the whole New Testament, under two different names (Jude in Luke and Acts, Thaddeus in Matthew and Mark). He&#x27;s the patron saint of desperate and hopeless cases, and tradition holds he and Simon the Zealot were martyred together on a shared mission.</div>
+      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saints-simon-and-jude/">Franciscan Media</a></div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/ephesians/5?21">Ephesians 5:21-33</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/128?1">Psalm 128:1-2, 3, 4-5</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/13?18">Luke 13:18-21</a></span></div>
-      <div class="gist">Paul holds up Christ&#x27;s love for the church as the model for marriage, and Jesus compares God&#x27;s kingdom to a mustard seed and a bit of yeast - small starts that quietly work through everything.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/102726.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/ephesians/2?19">Ephesians 2:19-22</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/19?2">Psalm 19:2-3, 4-5</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/6?12">Luke 6:12-16</a></span></div>
+      <div class="gist">Jesus prays all night, then picks twelve ordinary men as apostles, the same foundation Paul later calls a temple built on apostles and prophets with Christ as the cornerstone.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/102826.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Tuesday, October 27 · 5:36 AM ET</footer>
+    <footer>Updated Wednesday, October 28 · 5:37 AM ET</footer>
   </div>
 </body>
 </html>
