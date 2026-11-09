@@ -6,27 +6,32 @@
 <meta http-equiv="refresh" content="1800">
 <title>This Week's Menu</title>
 <style>
+  /* --u: one sizing step. Tracks height on wide screens (dining room) and width on
+     narrow ones (office block), so text shrinks to fit instead of overflowing. */
+  :root { --u: min(1vh, 1.567vw); }
+  html, body { height: 100%; overflow: hidden; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { background: #14110f; color: #f3ede4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; min-height: 100vh; display: flex; justify-content: center; }
-  .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 4vh 2.5vh; }
-  header { text-align: center; border-bottom: 2px solid #c8772e; padding-bottom: 2.2vh; margin-bottom: 1.4vh; }
-  h1 { font-size: 4.6vh; font-weight: 800; letter-spacing: 0.04em; color: #f0a35e; text-transform: uppercase; }
-  .range { font-size: 2.2vh; color: #b8ad9e; margin-top: 0.6vh; letter-spacing: 0.02em; }
+  .frame { width: min(94vw, 60vh); height: 100vh; display: flex; flex-direction: column; padding: calc(4 * var(--u)) calc(2.5 * var(--u)); }
+  header { text-align: center; border-bottom: 2px solid #c8772e; padding-bottom: calc(2.2 * var(--u)); margin-bottom: calc(1.4 * var(--u)); }
+  h1 { font-size: calc(4.6 * var(--u)); font-weight: 800; letter-spacing: 0.04em; color: #f0a35e; text-transform: uppercase; }
+  .range { font-size: calc(2.2 * var(--u)); color: #b8ad9e; margin-top: calc(0.6 * var(--u)); letter-spacing: 0.02em; }
   .days { flex: 1; display: flex; flex-direction: column; }
-  .day { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 1.0vh 0.4vh; border-bottom: 1px solid #2c2620; }
+  .day { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: calc(1.0 * var(--u)) calc(0.4 * var(--u)); border-bottom: 1px solid #2c2620; }
   .day:last-child { border-bottom: none; }
-  .day-head { display: flex; align-items: center; gap: 1.2vh; }
-  .day-name { font-size: 2.5vh; font-weight: 700; color: #f0a35e; text-transform: uppercase; letter-spacing: 0.05em; }
-  .day-date { font-size: 1.9vh; color: #8a8175; }
-  .cook { margin-left: auto; font-size: 1.6vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 0.5vh 1.4vh; border-radius: 999px; }
+  .day-head { display: flex; align-items: center; gap: calc(1.2 * var(--u)); }
+  .day-name { font-size: calc(2.5 * var(--u)); font-weight: 700; color: #f0a35e; text-transform: uppercase; letter-spacing: 0.05em; }
+  .day-date { font-size: calc(1.9 * var(--u)); color: #8a8175; }
+  .cook { margin-left: auto; font-size: calc(1.6 * var(--u)); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: calc(0.5 * var(--u)) calc(1.4 * var(--u)); border-radius: 999px; }
   .cook-dom { background: #1d3a5f; color: #8fc1ff; }
   .cook-mel { background: #4a2150; color: #e6a8f0; }
   .cook-both { background: #1d4a3f; color: #7fd8b4; }
-  .meal { font-size: 3.2vh; font-weight: 700; color: #ffffff; margin-top: 0.5vh; line-height: 1.1; }
-  .meal.empty { font-size: 2.4vh; color: #4a443c; font-weight: 400; }
-  .alt { font-size: 2.0vh; color: #b0a698; margin-top: 0.3vh; }
-  .event { font-size: 1.8vh; color: #e8896b; font-style: italic; margin-top: 0.4vh; }
-  footer { text-align: center; font-size: 1.4vh; color: #5c554c; margin-top: 1.4vh; }
+  .meal { font-size: calc(3.2 * var(--u)); font-weight: 700; color: #ffffff; margin-top: calc(0.5 * var(--u)); line-height: 1.1; }
+  .meal.empty { font-size: calc(2.4 * var(--u)); color: #4a443c; font-weight: 400; }
+  .alt { font-size: calc(2.0 * var(--u)); color: #b0a698; margin-top: calc(0.3 * var(--u)); }
+  .event { font-size: calc(1.8 * var(--u)); color: #e8896b; font-style: italic; margin-top: calc(0.4 * var(--u)); }
+  .meal, .alt, .event { overflow-wrap: anywhere; }
+  footer { text-align: center; font-size: calc(1.4 * var(--u)); color: #5c554c; margin-top: calc(1.4 * var(--u)); }
 </style>
 </head>
 <body>
