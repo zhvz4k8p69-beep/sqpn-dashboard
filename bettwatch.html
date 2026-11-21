@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BettWatch — Coming Up</title>
+<style>
+  :root { --u: min(1vh, 1.6vw); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; overflow: hidden; }
+  body { background: #14110f; color: #f3ede4; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; display: flex; justify-content: center; }
+  .frame { width: min(94vw, 60vh); height: 100vh; display: flex; flex-direction: column; padding: calc(4 * var(--u)) calc(2.5 * var(--u)); }
+  h1 { font-size: calc(4.6 * var(--u)); font-weight: 800; letter-spacing: 0.04em; color: #f0a35e; text-transform: uppercase; }
+  .sub { font-size: calc(2.2 * var(--u)); color: #b8ad9e; margin-top: calc(0.6 * var(--u)); }
+  ul { list-style: none; margin-top: calc(2.4 * var(--u)); flex: 1; display: flex; flex-direction: column; gap: calc(1.6 * var(--u)); overflow: hidden; }
+  li { border-top: 1px solid #2a2520; padding-top: calc(1.2 * var(--u)); }
+  li[hidden] { display: none; }
+  .when { display: flex; justify-content: space-between; align-items: baseline; }
+  .date { font-size: calc(2.2 * var(--u)); font-weight: 700; color: #f0a35e; text-transform: uppercase; letter-spacing: 0.05em; }
+  .count { font-size: calc(1.9 * var(--u)); font-weight: 700; color: #14110f; background: #f0a35e; border-radius: calc(0.8 * var(--u)); padding: calc(0.2 * var(--u)) calc(0.9 * var(--u)); }
+  .count.later { background: #2a2520; color: #b8ad9e; }
+  .show { font-size: calc(3.0 * var(--u)); font-weight: 700; color: #ffffff; margin-top: calc(0.4 * var(--u)); line-height: 1.1; }
+  .net { font-size: calc(1.8 * var(--u)); font-weight: 400; color: #8a8175; margin-left: calc(1 * var(--u)); }
+  .ep { font-size: calc(2.0 * var(--u)); color: #b0a698; margin-top: calc(0.3 * var(--u)); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .empty { font-size: calc(2.4 * var(--u)); color: #4a443c; margin-top: calc(3 * var(--u)); }
+  footer { text-align: center; font-size: calc(1.4 * var(--u)); color: #5c554c; margin-top: calc(1.4 * var(--u)); }
+</style>
+</head>
+<body>
+<div class="frame">
+  <h1>Coming Up</h1>
+  <div class="sub">New episodes of the shows we watch</div>
+  <ul id="list">
+    <li data-day="2026-11-22">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">The Chosen<span class="net">Prime Video</span></div>
+      <div class="ep">S06E04 · 5:00am - 6:00am</div>
+    </li>
+    <li data-day="2026-11-23">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">FBI<span class="net">CBS</span></div>
+      <div class="ep">S09E08 · Episode 8</div>
+    </li>
+    <li data-day="2026-11-25">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">The Lord of the Rings: The Rings of Power<span class="net">Prime Video</span></div>
+      <div class="ep">S03E08 · Episode 8</div>
+    </li>
+    <li data-day="2026-11-25">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">The Lord of the Rings: The Rings of Power<span class="net">Prime Video</span></div>
+      <div class="ep">S03E07 · Episode 7</div>
+    </li>
+    <li data-day="2026-11-27">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">S.W.A.T. Exiles<span class="net">STARZ</span></div>
+      <div class="ep">S01E10 · Episode 10</div>
+    </li>
+    <li data-day="2026-11-29">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">The Chosen<span class="net">Prime Video</span></div>
+      <div class="ep">S06E05 · 6:00am - 7:00am</div>
+    </li>
+    <li data-day="2026-11-30">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">FBI<span class="net">CBS</span></div>
+      <div class="ep">S09E09 · Episode 9</div>
+    </li>
+    <li data-day="2026-11-30">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">FBI<span class="net">CBS</span></div>
+      <div class="ep">S09E08 · 22 Minutes</div>
+    </li>
+    <li data-day="2026-12-06">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">The Chosen<span class="net">Prime Video</span></div>
+      <div class="ep">S06E06 · 7:00am - 8:30am</div>
+    </li>
+    <li data-day="2026-12-07">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">FBI<span class="net">CBS</span></div>
+      <div class="ep">S09E10 · Episode 10</div>
+    </li>
+    <li data-day="2026-12-07">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">FBI<span class="net">CBS</span></div>
+      <div class="ep">S09E09 · Episode 9</div>
+    </li>
+    <li data-day="2026-12-11">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Boston Blue<span class="net">CBS</span></div>
+      <div class="ep">S02E07 · Crisis</div>
+    </li>
+    <li data-day="2026-12-11">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Boston Blue<span class="net">CBS</span></div>
+      <div class="ep">S02E07 · Crisis</div>
+    </li>
+    <li data-day="2026-12-11">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Fire Country<span class="net">CBS</span></div>
+      <div class="ep">S05E07 · Episode 7</div>
+    </li>
+    <li data-day="2026-12-11">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Fire Country<span class="net">CBS</span></div>
+      <div class="ep">S05E07 · Fight the Future</div>
+    </li>
+    <li data-day="2026-12-11">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Sheriff Country<span class="net">CBS</span></div>
+      <div class="ep">S02E07 · Stand Your Ground</div>
+    </li>
+    <li data-day="2026-12-11">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Sheriff Country<span class="net">CBS</span></div>
+      <div class="ep">S02E07 · Stand Your Ground</div>
+    </li>
+    <li data-day="2026-12-14">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">FBI<span class="net">CBS</span></div>
+      <div class="ep">S09E10 · Episode 10</div>
+    </li>
+    <li data-day="2026-12-18">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Boston Blue<span class="net">CBS</span></div>
+      <div class="ep">S02E08 · Chaos</div>
+    </li>
+    <li data-day="2026-12-18">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Fire Country<span class="net">CBS</span></div>
+      <div class="ep">S05E08 · Let It Burn</div>
+    </li>
+    <li data-day="2026-12-18">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">Sheriff Country<span class="net">CBS</span></div>
+      <div class="ep">S02E08 · Justice Delayed</div>
+    </li>
+    <li data-day="2027-01-01">
+      <div class="when"><span class="date"></span><span class="count"></span></div>
+      <div class="show">The Rookie<span class="net">ABC</span></div>
+      <div class="ep">S09E01 · Episode 1</div>
+    </li>
+  </ul>
+  <div class="empty" id="empty" hidden>Nothing new on the schedule.</div>
+  <footer>BettWatch · updated Nov 21 at 10:41 AM</footer>
+</div>
+<script>
+(function () {
+  var SHOWN = 10;
+  var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  function render() {
+    var now = new Date();
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var items = document.querySelectorAll('#list li');
+    var visible = 0;
+    for (var i = 0; i < items.length; i++) {
+      var li = items[i];
+      var p = li.getAttribute('data-day').split('-');
+      var air = new Date(+p[0], +p[1] - 1, +p[2]);
+      var diff = Math.round((air - today) / 86400000);
+      if (diff < 0 || visible >= SHOWN) { li.hidden = true; continue; }
+      li.hidden = false; visible++;
+      li.querySelector('.date').textContent = days[air.getDay()] + ' ' + months[air.getMonth()] + ' ' + air.getDate();
+      var c = li.querySelector('.count');
+      c.textContent = diff === 0 ? 'Tonight' : diff === 1 ? 'Tomorrow' : 'In ' + diff + ' days';
+      c.className = diff <= 1 ? 'count' : 'count later';
+    }
+    document.getElementById('empty').hidden = visible > 0;
+  }
+  render();
+  setInterval(render, 3600000);
+})();
+</script>
+</body>
+</html>
