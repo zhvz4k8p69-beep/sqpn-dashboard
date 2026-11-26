@@ -11,23 +11,23 @@
   /* DAKboard is landscape; this is a tall portrait column centered on it.
      width = min(94vw, 60vh) keeps the column narrower than it is tall. */
   .frame { width: min(94vw, 60vh); min-height: 100vh; display: flex; flex-direction: column; padding: 3.5vh 2.2vh; }
-  header { text-align: center; border-bottom: 2px solid #d56a52; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
-  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #ecae9d; margin-bottom: 0.7vh; }
-  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #d56a52; line-height: 1.1; }
+  header { text-align: center; border-bottom: 2px solid #5fb878; padding-bottom: 1.8vh; margin-bottom: 1.8vh; }
+  .eyebrow { font-size: 1.4vh; letter-spacing: 0.18em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 0.7vh; }
+  h1 { font-size: 3.2vh; font-weight: 800; letter-spacing: 0.01em; color: #5fb878; line-height: 1.1; }
   .date { font-size: 1.6vh; color: #b8ad9e; margin-top: 0.8vh; letter-spacing: 0.02em; }
-  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #d56a52; padding: 0.4vh 1.3vh; border-radius: 999px; }
+  .rank { display: inline-block; margin-top: 1.0vh; font-size: 1.2vh; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #14110f; background: #5fb878; padding: 0.4vh 1.3vh; border-radius: 999px; }
   .superseded { font-size: 1.2vh; color: #6b6459; margin-top: 0.9vh; font-style: italic; }
   .saint { flex: 0 0 auto; text-align: center; padding: 0.8vh 0 2.0vh; border-bottom: 1px solid #2c2620; margin-bottom: 1.8vh; }
   .saint-name { font-size: 2.6vh; font-weight: 700; color: #ffffff; line-height: 1.12; }
-  .saint-sub { font-size: 1.5vh; color: #ecae9d; margin-top: 0.7vh; font-style: italic; }
+  .saint-sub { font-size: 1.5vh; color: #9fd6ad; margin-top: 0.7vh; font-style: italic; }
   .saint-blurb { font-size: 1.8vh; color: #e7ded2; line-height: 1.45; margin-top: 1.5vh; }
   .saint-blurb.quote { font-style: italic; }
   .saint-blurb.quote::before { content: "\201C"; }
   .saint-blurb.quote::after { content: "\201D"; }
   .saint-cite { font-size: 1.2vh; color: #8a8175; margin-top: 1.2vh; }
-  .saint-cite a, .reading a, .full-link { color: #ecae9d; text-decoration: none; }
+  .saint-cite a, .reading a, .full-link { color: #9fd6ad; text-decoration: none; }
   .readings { flex: 1 1 auto; display: flex; flex-direction: column; }
-  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #ecae9d; margin-bottom: 1.0vh; text-align: center; }
+  .readings h2 { font-size: 1.4vh; letter-spacing: 0.2em; text-transform: uppercase; color: #9fd6ad; margin-bottom: 1.0vh; text-align: center; }
   .reading { display: flex; justify-content: space-between; align-items: baseline; gap: 1.3vh; padding: 0.9vh 0; border-bottom: 1px solid #221d18; }
   .r-label { font-size: 1.5vh; color: #9a8f80; text-transform: uppercase; letter-spacing: 0.04em; flex: 0 0 auto; }
   .r-cite { font-size: 1.7vh; font-weight: 600; color: #ffffff; text-align: right; }
@@ -40,25 +40,23 @@
   <div class="frame">
     <header>
       <div class="eyebrow">Saint &amp; Readings of the Day</div>
-      <h1>Wednesday of the Thirty-fourth Week in Ordinary Time</h1>
-      <div class="date">Wednesday, November 25, 2026</div>
+      <h1>Thursday of the Thirty-fourth Week in Ordinary Time (Thanksgiving Day)</h1>
+      <div class="date">Thursday, November 26, 2026</div>
       <span class="rank">Weekday</span>
     </header>
-    <section class="saint">
-      <div class="saint-name">Saint Catherine of Alexandria</div>
-      <div class="saint-sub">Virgin and Martyr</div>
-      <div class="saint-blurb">Tradition says she debated 50 pagan philosophers at age 18, and that the spiked wheel meant to execute her shattered when she touched it. She was beheaded.</div>
-      <div class="saint-cite">Source: <a href="https://www.franciscanmedia.org/saint-of-the-day/saint-catherine-of-alexandria/">Franciscan Media</a></div>
+    <section class="saint no-saint">
+      <div class="saint-blurb">The Church keeps this day itself — no individual saint is assigned.</div>
     </section>
     <section class="readings">
       <h2>Today's Readings</h2>
-      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/revelation/15?1">Revelation 15:1-4</a></span></div>
-      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/98?1">Psalm 98:1, 2-3ab, 7-8, 9</a></span></div>
-      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/21?12">Luke 21:12-19</a></span></div>
-      <div class="gist">In Revelation, those who conquered the beast sing the song of Moses and the Lamb; in Luke, Jesus warns his disciples they will be hauled before rulers and tells them endurance is how they secure their lives.</div>
-      <a class="full-link" href="https://bible.usccb.org/bible/readings/112526.cfm">Full readings at USCCB →</a>
+      <div class="reading"><span class="r-label">First Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/sirach/50?22">Sirach 50:22-24</a></span></div>
+      <div class="reading"><span class="r-label">Responsorial Psalm</span><span class="r-cite"><a href="https://bible.usccb.org/bible/psalms/145?2">Psalm 145:2-3, 4-5, 6-7, 8-9, 10-11</a></span></div>
+      <div class="reading"><span class="r-label">Second Reading</span><span class="r-cite"><a href="https://bible.usccb.org/bible/1corinthians/1?3">1 Corinthians 1:3-9</a></span></div>
+      <div class="reading"><span class="r-label">Gospel</span><span class="r-cite"><a href="https://bible.usccb.org/bible/luke/17?11">Luke 17:11-19</a></span></div>
+      <div class="gist">Sirach and Paul both tell us to bless the God who gives us everything, and in the Gospel only one of the ten cleansed lepers, a Samaritan, comes back to say thank you.</div>
+      <a class="full-link" href="https://bible.usccb.org/bible/readings/112626.cfm">Full readings at USCCB →</a>
     </section>
-    <footer>Updated Wednesday, November 25 · 5:35 AM ET</footer>
+    <footer>Updated Thursday, November 26 · 5:34 AM ET</footer>
   </div>
 </body>
 </html>
